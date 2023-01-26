@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/compra"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="1.dp"
+        app:contentPadding="10dp"
+        app:contentPaddingLeft="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:id="@+id/imagenFoto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="5dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.512">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_nombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:text="Nombre producto:"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tclaveprod" />
+
+            <TextView
+                android:id="@+id/txt_precio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:padding="10dp"
+                android:text="Precio Producto:"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nombre"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_cantidad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:padding="10dp"
+                android:text="Cantidad Disponible:"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_precio" />
+
+            <TextView
+                android:id="@+id/tclaveprod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Codigo Producto"
+                android:padding="10dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txt_nombre"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/cantidadadquirida"
+                android:layout_width="77dp"
+                android:layout_height="52dp"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                android:digits="0123456789"
+                app:layout_constraintEnd_toEndOf="@+id/txt_cantidad"
+                app:layout_constraintStart_toStartOf="@+id/imagenFoto"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cantidad" />
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_add" />
+
+            <ImageView
+                android:id="@+id/less"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_quitar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

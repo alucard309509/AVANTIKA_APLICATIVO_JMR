@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.twiekie.avantika_aplicativo_jmr.view.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_comprasProductos"
+            app:destination="@id/comprasProductos" />
+        <action
+            android:id="@+id/action_menuFragment_to_altaproductos"
+            app:destination="@id/altaproductos" />
+        <action
+            android:id="@+id/action_menuFragment_to_totalVentas"
+            app:destination="@id/totalVentas" />
+        <action
+            android:id="@+id/action_menuFragment_to_ventas"
+            app:destination="@id/ventas" />
+        <action
+            android:id="@+id/action_menuFragment_to_productosComprados"
+            app:destination="@id/productosComprados" />
+        <action
+            android:id="@+id/action_menuFragment_to_inventario"
+            app:destination="@id/inventario" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/totalVentas"
+        android:name="com.twiekie.avantika_aplicativo_jmr.view.fragments.TotalVentas"
+        android:label="fragment_total_ventas"
+        tools:layout="@layout/fragment_total_ventas" />
+    <fragment
+        android:id="@+id/altaproductos"
+        android:name="com.twiekie.avantika_aplicativo_jmr.view.fragments.Altaproductos"
+        android:label="fragment_altaproductos"
+        tools:layout="@layout/fragment_altaproductos" />
+    <fragment
+        android:id="@+id/comprasProductos"
+        android:name="com.twiekie.avantika_aplicativo_jmr.view.fragments.ComprasProductos"
+        android:label="fragment_compras_productos"
+        tools:layout="@layout/fragment_compras_productos" />
+    <fragment
+        android:id="@+id/ventas"
+        android:name="com.twiekie.avantika_aplicativo_jmr.view.fragments.Ventas"
+        android:label="fragment_ventas"
+        tools:layout="@layout/fragment_ventas" />
+    <fragment
+        android:id="@+id/productosComprados"
+        android:name="com.twiekie.avantika_aplicativo_jmr.view.fragments.ProductosComprados"
+        android:label="fragment_productos_comprados"
+        tools:layout="@layout/fragment_productos_comprados" />
+    <fragment
+        android:id="@+id/inventario"
+        android:name="com.twiekie.avantika_aplicativo_jmr.view.fragments.Inventario"
+        android:label="fragment_inventario"
+        tools:layout="@layout/fragment_inventario" />
+</navigation>
